@@ -1,0 +1,22 @@
+{
+  "name": "N1-Thread-Age",
+  "title": "Thread Age",
+  "description": "Display a thread badge indicating its age.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "./lib/main",
+  "icon": "./icon.png",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "nylas": ">=0.4.401"
+  },
+  "windowTypes": {
+    "default": true
+  },
+  "dependencies": {
+    "form-serialize": "^0.7.1"
+  }
+}

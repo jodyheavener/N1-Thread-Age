@@ -1,0 +1,151 @@
+@color-low-foreground: #555f75;
+@color-low-background: #dce2ef;
+
+@color-medium-foreground: #736027;
+@color-medium-background: #fcd45c;
+
+@color-high-foreground: #f9f6f6;
+@color-high-background: #ff635f;
+
+// Thread styles
+
+.thread-age {
+  margin-right: 6px;
+  flex-shrink: 0;
+  display: inline-block;
+  cursor: default;
+  border: none !important;
+  -webkit-user-select: none;
+
+  &.icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  &.text {
+    font-size: 0.8em;
+    padding: 0px 5px;
+    line-height: 22px;
+    border-radius: 3px;
+  }
+
+  &.low {
+    color: @color-low-foreground;
+    background-color: @color-low-background;
+  }
+
+  &.medium {
+    color: @color-medium-foreground;
+    background-color: @color-medium-background;
+  }
+
+  &.high {
+    color: @color-high-foreground;
+    background-color: @color-high-background;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.empty {
+    display: none;
+  }
+}
+
+// Preferences styles
+
+.container-threadage {
+  width: 40%;
+  min-width: 460px;
+  margin: 0 auto;
+}
+
+.threadage-intro {
+  color: #757575;
+  font-size: 12px;
+}
+
+.threadage-section-title {
+  border-bottom: 1px solid #dddddd;
+  margin: 20px 0 15px;
+}
+
+.threadage-section-settings {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+
+  tr:not(:last-child) td {
+    padding-bottom: 10px;
+  }
+
+  tr td:first-child {
+    width: 150px;
+  }
+
+  .threadage-section-setting-badgeStyle {
+
+    label {
+      margin-right: 15px;
+    }
+  }
+
+  .threadage-section-setting-displayRules {
+    vertical-align: top;
+
+    label {
+      display: block;
+    }
+  }
+
+  &.thresholds {
+
+    input[type="number"],
+    select {
+      display: inline;
+      box-sizing: border-box;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    input[type="number"] {
+      width: ~"calc(100% - 110px)";
+    }
+
+    select {
+      width: 100px;
+      margin-left: 10px;
+    }
+
+    label {
+      font-weight: 600;
+      padding: 2px 4px;
+      border-radius: 2px;
+    }
+
+    [for="select-low-amount"] {
+      color: @color-low-foreground;
+      background-color: @color-low-background;
+    }
+
+    [for="select-medium-amount"] {
+      color: @color-medium-foreground;
+      background-color: @color-medium-background;
+    }
+
+    [for="select-high-amount"] {
+      color: @color-high-foreground;
+      background-color: @color-high-background;
+    }
+  }
+}
+
+.threadage-section-setting-container {
+  display: table-row;
+}
+
+.threadage-setting-title {
+  display: table-cell;
+}
