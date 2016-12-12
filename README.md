@@ -2,7 +2,7 @@
 
 `v0.1.0` - An N1 plugin to display a thread badge indicating its age.
 
-### Why does this exist?
+## Why does this exist?
 
 I built this because I tend to leave messages in my inbox with the intention of responding later. Sometimes that doesn't happen in a reasonable amount of time, so Thread Age is here to visually light a fire under my ass.
 
