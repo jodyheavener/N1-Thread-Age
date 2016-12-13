@@ -1,6 +1,6 @@
 # Thread Age
 
-`v0.1.0` - An N1 plugin to display a thread badge indicating its age.
+`v1.0.0` - An N1 plugin to display a thread badge indicating its age.
 
 ## Why does this exist?
 

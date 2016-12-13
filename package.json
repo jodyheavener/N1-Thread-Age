@@ -2,13 +2,13 @@
   "name": "N1-Thread-Age",
   "title": "Thread Age",
   "description": "Display a thread badge indicating its age.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "./lib/main",
   "icon": "./icon.png",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/jodyheavener/N1-Thread-Age"
   },
   "engines": {
     "nylas": ">=0.4.401"
